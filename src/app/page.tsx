@@ -83,7 +83,8 @@ export default function Home() {
           tags={['FastAPI', 'Next.js', 'Docker', 'AWS', 'Clerk']}
           isProductionReady={true}
           links={[
-            { label: 'Live Demo', url: 'https://drutw6qptx.us-east-2.awsapprunner.com/' },
+            { label: 'AWS Demo', url: 'https://drutw6qptx.us-east-2.awsapprunner.com/' },
+            { label: 'Vercel Demo', url: 'https://saas-orcin-three.vercel.app/' },
             { label: 'GitHub', url: 'https://github.com/AnwarReg/saas-ai' }
           ]}
           icon={Server}
