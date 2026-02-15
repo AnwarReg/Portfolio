@@ -83,7 +83,7 @@ export default function Home() {
           tags={['FastAPI', 'Next.js', 'Docker', 'AWS', 'Clerk']}
           isProductionReady={true}
           links={[
-            { label: 'Live Demo', url: 'https://saas-orcin-three.vercel.app/' },
+            { label: 'Live Demo', url: 'https://drutw6qptx.us-east-2.awsapprunner.com/' },
             { label: 'GitHub', url: 'https://github.com/AnwarReg/saas-ai' }
           ]}
           icon={Server}
@@ -220,7 +220,7 @@ export default function Home() {
               These foundations strengthen my analytical reasoning for algorithms, modeling, and data-driven problems.
             </p>
             <div className="flex flex-wrap gap-2">
-              {['Calculus II–III', 'Linear Algebra', 'Differential Equations', 'Partial Differential Equations', 'Probability & Statistics', 'Combinatorics', 'Abstract Algebra'].map((course) => (
+              {['Calculus II–III', 'Linear Algebra', 'Differential Equations', 'Partial Differential Equations', 'Probability & Statistics', 'Combinatorics', 'Abstract Algebra', 'Abstract Math'].map((course) => (
                 <span key={course} className="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-md text-sm text-zinc-400 font-mono">
                   {course}
                 </span>
