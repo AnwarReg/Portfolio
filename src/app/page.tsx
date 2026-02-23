@@ -71,6 +71,26 @@ export default function Home() {
         className="bg-zinc-900/30"
       >
         <ProjectCard
+          title="AI Digital Twin"
+          subtitle="An Intelligent Full-Stack Career Assistant & Personal Persona."
+          detailedDescription="A state-of-the-art, full-stack application serving as a virtual representative of my professional persona. Built using a cloud-native serverless architecture, it leverages Generative AI to interact with recruiters and collaborators. The backend uses Python-based AWS Lambda functions and Amazon Bedrock (Claude/Llama) to provide context-aware responses, while the frontend offers a dynamic UX with real-time chat and custom avatar detection."
+          specs={{
+            'Architecture': '100% Serverless Cloud-Native (AWS)',
+            'AI Engine': 'Amazon Bedrock (Amazon nova)',
+            'Infrastructure': 'Terraform IaC (Infrastructure as Code)',
+            'Security': 'OIDC Secure Authentication (GitHub ↔ AWS)',
+            'DevOps': 'Automated "Golden Pipeline" (GitHub Actions)'
+          }}
+          tags={['Next.js', 'AWS Lambda', 'Terraform', 'Amazon Bedrock', 'Python', 'CI/CD']}
+          isProductionReady={true}
+          links={[
+            { label: 'Live Demo', url: 'https://dykx3nrpb7q5n.cloudfront.net/' },
+            { label: 'GitHub', url: 'https://github.com/AnwarReg/AI-digital-twin' }
+          ]}
+          icon={User}
+        />
+
+        <ProjectCard
           title="Healthcare Consultation Assistant"
           subtitle="Full-stack AI assistant migrated to AWS Container-native infrastructure."
           detailedDescription="A production-grade AI SaaS originally built on Vercel Serverless, now migrated to AWS for granular control. I implemented multi-stage Docker builds to optimize image size and deployed to AWS App Runner. The system is monitored via CloudWatch logs and health checks, with security enforced by IAM least-privilege policies. It demonstrates a complete DevOps lifecycle from containerization to cloud deployment."
@@ -83,7 +103,6 @@ export default function Home() {
           tags={['FastAPI', 'Next.js', 'Docker', 'AWS', 'Clerk']}
           isProductionReady={true}
           links={[
-            { label: 'AWS Demo', url: 'https://drutw6qptx.us-east-2.awsapprunner.com/' },
             { label: 'Vercel Demo', url: 'https://saas-orcin-three.vercel.app/' },
             { label: 'GitHub', url: 'https://github.com/AnwarReg/saas-ai' }
           ]}
