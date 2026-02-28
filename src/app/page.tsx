@@ -6,6 +6,7 @@ import Section from '@/components/layout/Section';
 import ProjectCard from '@/components/ui/ProjectCard';
 import Footer from '@/components/layout/Footer';
 import {
+  Shield,
   Server,
   Brain,
   Droplet,
@@ -70,6 +71,26 @@ export default function Home() {
         subtitle="Infrastructure, Intelligence, and Physics Engines."
         className="bg-zinc-900/30"
       >
+        <ProjectCard
+          title="AI-Powered Cybersecurity Analyst"
+          subtitle="Full-Stack Code Analysis via OpenAI Agents and Multi-Cloud Serverless Infrastructure."
+          detailedDescription="The Cybersecurity Analyst is an advanced code assessment tool designed to bridge the gap between traditional static analysis and modern AI intelligence. By orchestrating LLM Agents with the Semgrep security engine, the application provides instantaneous, context-aware vulnerability reports, CVSS scoring, and actionable remediation strategies for Python codebases."
+          specs={{
+            'Core Logic': 'OpenAI Agents SDK (GPT-4o) + Semgrep MCP Server',
+            'Multi-Cloud': 'Azure Container Apps + GCP Cloud Run (Single Docker Base)',
+            'Intelligence': 'Automated Security Researcher Agentic Workflow',
+            'Infrastructure': 'Unified Terraform Configurations for Multi-Cloud Parity',
+            'Security': 'Azure Key Vault & GCP Secret Manager Integration'
+          }}
+          tags={['FastAPI', 'Next.js', 'Docker', 'OpenAI Agents', 'Semgrep', 'Terraform', 'Azure', 'GCP']}
+          isProductionReady={true}
+          links={[
+            { label: 'Azure Demo', url: 'https://cyber-analyzer.gentlefield-368193c0.eastus.azurecontainerapps.io/' },
+            { label: 'GCP Demo', url: 'https://cyber-analyzer-m5tym754wq-uc.a.run.app/' }
+          ]}
+          icon={Shield}
+        />
+
         <ProjectCard
           title="AI Digital Twin"
           subtitle="An Intelligent Full-Stack Career Assistant & Personal Persona."
